@@ -28,7 +28,10 @@ void CStatics::DoDataExchange(CDataExchange* pDX)
 
 
 BEGIN_MESSAGE_MAP(CStatics, CDialogEx)
+	
 END_MESSAGE_MAP()
 
 
 // CStatics 消息处理程序
+
+

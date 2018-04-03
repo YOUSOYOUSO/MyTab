@@ -4,10 +4,10 @@
 #include "MyTabDlg.h"
 #include "TabPage1.h"
 #include "Front.h"
+#include "ShowResult.h"
 #include "afxdialogex.h"
 #include "opencv2/opencv.hpp"
 #include <opencv2\core\core.hpp>
-
 #include <opencv2\core\core.hpp>
 #include <opencv2\imgproc\imgproc.hpp>
 #include <opencv2\highgui\highgui.hpp>
@@ -33,6 +33,7 @@ public:
 	enum { IDD = IDD_DIALOG1 };
 #endif
 	CFront *m_pTipDlg;
+	ShowResult * RDlg;
 
 protected:
 	virtual void DoDataExchange(CDataExchange* pDX);    // DDX/DDV Ö§³Ö
@@ -50,4 +51,5 @@ public:
 	afx_msg void Display(IplImage * img, UINT ID);
 	CButton PluseButton;
 	afx_msg void OnBnClickedButtonTofront();
+	afx_msg void OnBnClickedButtonResult();
 };

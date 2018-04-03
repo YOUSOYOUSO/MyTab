@@ -55,6 +55,7 @@ BEGIN_MESSAGE_MAP(CTabPage1, CDialogEx)
 	ON_BN_CLICKED(IDC_END_VIDEO, &CTabPage1::OnBnClickedEndVideo)
 	ON_BN_CLICKED(IDC_CONVERT, &CTabPage1::OnBnClickedConvert)
 	ON_BN_CLICKED(IDC_BUTTON_TOFRONT, &CTabPage1::OnBnClickedButtonTofront)
+	ON_BN_CLICKED(IDC_BUTTON_RESULT, &CTabPage1::OnBnClickedButtonResult)
 END_MESSAGE_MAP()
 
 
@@ -249,6 +250,14 @@ void CTabPage1::OnBnClickedButtonTofront()
 	}
 
 	m_pTipDlg->ShowWindow(SW_SHOW);//换一个函数
+}
+
+void CTabPage1::OnBnClickedButtonResult() {
+	//AfxMessageBox(_T("CNM！！"));
+
+	RDlg = new ShowResult;
+	RDlg->Create(IDD_DIALOG4, this);
+	RDlg->ShowWindow(SW_SHOW);//换一个函数
 }
 
 CTabPage1::~CTabPage1()
