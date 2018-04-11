@@ -9,9 +9,8 @@
 #include <stdlib.h>
 
 // CTabPage2 对话框
-extern float hang, lie;
-extern float alpha, beta, gamma;
-extern float boundary;
+float hang = 300, lie = 200;
+float alpha = 0.99, beta = 0.01, gamma = 0.0;
 
 IMPLEMENT_DYNAMIC(CTabPage2, CDialogEx)
 
@@ -45,7 +44,7 @@ BEGIN_MESSAGE_MAP(CTabPage2, CDialogEx)
 	//ON_EN_CHANGE(IDC_EDIT1, &CTabPage2::OnEnChangeEdit1)
 	//ON_EN_CHANGE(IDC_EDIT6, &CTabPage2::OnEnChangeEdit6)
 	ON_BN_CLICKED(IDC_BUTTON_Con, &CTabPage2::OnBnClickedButtonCon)
-	ON_BN_CLICKED(IDC_BUTTON_Cop, &CTabPage2::OnBnClickedButtonCop)
+	//ON_BN_CLICKED(IDC_BUTTON_Cop, &CTabPage2::OnBnClickedButtonCop)
 END_MESSAGE_MAP()
 
 
@@ -82,11 +81,11 @@ void CTabPage2::OnBnClickedButtonCon()
 
 
 
-void CTabPage2::OnBnClickedButtonCop()
+/*void CTabPage2::OnBnClickedButtonCop()
 {
 	// TODO: 在此添加控件通知处理程序代码
 	CString boundary1;
 	GetDlgItemText(IDC_EDIT7, boundary1);
 	char* nboundary1 = CStringToChar(boundary1);
 	boundary = atof(nboundary1);
-}
+}*/

@@ -23,7 +23,7 @@
     <ProjectGuid>{60F7D7D9-FBCA-41F3-84FD-8B89714EC228}</ProjectGuid>
     <Keyword>MFCProj</Keyword>
     <RootNamespace>MyTab</RootNamespace>
-    <WindowsTargetPlatformVersion>10.0.15063.0</WindowsTargetPlatformVersion>
+    <WindowsTargetPlatformVersion>10.0.16299.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
@@ -44,9 +44,9 @@
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
     <UseDebugLibraries>true</UseDebugLibraries>
-    <PlatformToolset>v141</PlatformToolset>
     <CharacterSet>Unicode</CharacterSet>
     <UseOfMfc>Dynamic</UseOfMfc>
+    <PlatformToolset>v141</PlatformToolset>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
@@ -79,8 +79,8 @@
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <LinkIncremental>true</LinkIncremental>
-    <IncludePath>D:\Program Files %28x86%29\opencv\build\include\opencv;D:\Program Files %28x86%29\opencv\build\include\opencv2;D:\Program Files %28x86%29\opencv\build\include;$(IncludePath)</IncludePath>
-    <LibraryPath>D:\Program Files %28x86%29\opencv\build\x64\vc14\bin;D:\Program Files %28x86%29\opencv\build\x64\vc14\lib;$(LibraryPath)</LibraryPath>
+    <IncludePath>D:\opencv\build\include\opencv;D:\opencv\build\include\opencv2;D:\opencv\build\include;$(IncludePath)</IncludePath>
+    <LibraryPath>D:\opencv\build\x64\vc14\bin;D:\opencv\build\x64\vc14\lib;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <LinkIncremental>false</LinkIncremental>
@@ -260,6 +260,7 @@
     <ClCompile Include="Front.cpp" />
     <ClCompile Include="MyTab.cpp" />
     <ClCompile Include="MyTabDlg.cpp" />
+    <ClCompile Include="PreView.cpp" />
     <ClCompile Include="ShowResult.cpp" />
     <ClCompile Include="Statics.cpp" />
     <ClCompile Include="stdafx.cpp">

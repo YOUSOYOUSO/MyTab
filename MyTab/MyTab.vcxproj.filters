@@ -248,6 +248,9 @@
     <ClCompile Include="CString1.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="PreView.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="MyTab.rc">

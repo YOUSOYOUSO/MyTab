@@ -23,6 +23,7 @@ using namespace cv;
 
 CEvent start_event;
 int terminate_flag;
+int totalframe;
 
 extern int testBJC();
 // CTabPage1 对话框
@@ -235,7 +236,7 @@ void CTabPage1::OnBnClickedConvert()
 {
 	// TODO: 在此添加控件通知处理程序代码
 	AfxMessageBox(_T("正在转换，请等一段时间！"));
-	testBJC();
+	totalframe=testBJC();
 	AfxMessageBox(_T("转换完成！"));
 }
 
@@ -254,7 +255,6 @@ void CTabPage1::OnBnClickedButtonTofront()
 
 void CTabPage1::OnBnClickedButtonResult() {
 	//AfxMessageBox(_T("CNM！！"));
-
 	RDlg = new ShowResult;
 	RDlg->Create(IDD_DIALOG4, this);
 	RDlg->ShowWindow(SW_SHOW);//换一个函数

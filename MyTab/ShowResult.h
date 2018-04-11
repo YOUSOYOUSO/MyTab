@@ -20,7 +20,10 @@ protected:
 
 	DECLARE_MESSAGE_MAP()
 public:
-	CChartCtrl m_ChartCtrl1;
+
+	CChartCtrl m_ChartCtrl2;
 	virtual BOOL OnInitDialog();
-	afx_msg void OnBnClickedOk();
+	afx_msg void OnBnClickedButtonZx();
+	afx_msg void OnBnClickedCheckZx();
+	afx_msg void OnBnClickedCheckZz();
 };
